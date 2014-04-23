@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.adam.app.junittest"
+	android:versionCode="1"
+	android:versionName="1.0" >
+
+	<uses-sdk
+		android:minSdkVersion="8"
+		android:targetSdkVersion="19" />
+	<instrumentation android:label="Tests for My App" android:name="android.test.InstrumentationTestRunner" android:targetPackage="com.adam.app.junittest"></instrumentation>
+
+	<application
+		android:allowBackup="true"
+		android:icon="@drawable/ic_launcher"
+		android:label="@string/app_name"
+		android:theme="@style/AppTheme" >
+		<uses-library android:name="android.test.runner"/>
+	</application>
+
+</manifest>
